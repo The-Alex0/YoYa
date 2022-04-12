@@ -21,11 +21,11 @@ const bot = new Client({
 
 const { Util } = require("discord.js");
 const fs = require("fs");
-const prefix = "yo";
+const prefix = "y!";
 const { Collection, MessageEmbed } = require("discord.js");
 const beautify = require("js-beautify");
 const { inspect } = require("util");
-let dev = [""];
+let dev = ["730549617044750346"];
 const cmd = require("node-cmd");
 const { I18n } = require("locale-parser");
 bot.reva = new I18n({ defaultLocale: "en" });
@@ -35,7 +35,7 @@ global.logChannel = bot.channels.cache.get("891641446283759646")
 global.mongoose = require("mongoose");
 mongoose
   .connect(
-    "",
+    "mongodb+srv://jubadevlopment:g112233s@cluster0.js1to.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
@@ -101,6 +101,6 @@ bot.on("messageCreate", async message => {
 /////
 
 
-bot.login("");
+bot.login("NzkxODU2NzU3ODQ0NDc1OTE0.X-VQEw.9cWcKIBP7DWuGXKQ62ihXMrz-pA");
 
 
